@@ -299,9 +299,14 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         private void toolThongKe_Click(object sender, EventArgs e)
         {
-            frmThongKeMuonSach frm = new frmThongKeMuonSach();
-            frm.MdiParent = this;
-            frm.Show();
+            frmThongKeMuonSach frmTKMS = new frmThongKeMuonSach();
+            foreach (Form frm in this.MdiChildren)
+                {
+                 frm.Close();
+              }
+                frmTKMS.MdiParent = this;
+            frmTKMS.Show();
+
 
             //frmXemBaoCao frmXem = new frmXemBaoCao();
             //foreach (Form frm in this.MdiChildren)

@@ -88,8 +88,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>1.06158cm</Top>
-            <Left>4.3545cm</Left>
+            <Top>2.75491cm</Top>
+            <Left>11.55117cm</Left>
             <Height>0.6cm</Height>
             <Width>2.5cm</Width>
             <Style>
@@ -117,8 +117,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>paLoaiSach</rd:DefaultName>
-            <Top>1.06158cm</Top>
-            <Left>6.88978cm</Left>
+            <Top>2.75491cm</Top>
+            <Left>14.08645cm</Left>
             <Height>0.6cm</Height>
             <Width>2.5cm</Width>
             <ZIndex>1</ZIndex>
@@ -136,24 +136,24 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>4.47908cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>4.47908cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>4.47908cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>4.47908cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>4.47908cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>1.39375cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -308,7 +308,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>1.39375cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -484,10 +484,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>dsSach</DataSetName>
-            <Top>2.81842cm</Top>
-            <Left>2.005cm</Left>
-            <Height>1.2cm</Height>
-            <Width>12.5cm</Width>
+            <Top>4.45884cm</Top>
+            <Left>1.84625cm</Left>
+            <Height>2.7875cm</Height>
+            <Width>22.39542cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -495,11 +495,44 @@
               </Border>
             </Style>
           </Tablix>
+          <Textbox Name="Textbox2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Thống kê SÁCH</Value>
+                    <Style>
+                      <FontSize>30pt</FontSize>
+                      <Color>SeaGreen</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0.5158cm</Top>
+            <Left>10.25938cm</Left>
+            <Height>1.47313cm</Height>
+            <Width>7.73875cm</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>2in</Height>
+        <Height>350pt</Height>
         <Style />
       </Body>
-      <Width>6.5in</Width>
+      <Width>726.75pt</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>

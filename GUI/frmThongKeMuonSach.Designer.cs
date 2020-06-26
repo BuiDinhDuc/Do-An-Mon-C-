@@ -50,20 +50,19 @@
             this.groupBox1.Controls.Add(this.rdoTheoNhom);
             this.groupBox1.Controls.Add(this.rdoTheoDauSach);
             this.groupBox1.Controls.Add(this.rdoTatCaSach);
-            this.groupBox1.Location = new System.Drawing.Point(117, 69);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(88, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(567, 368);
+            this.groupBox1.Size = new System.Drawing.Size(607, 380);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Loại thống kê";
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(356, 282);
+            this.btnHuy.Location = new System.Drawing.Point(467, 294);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(112, 44);
+            this.btnHuy.Size = new System.Drawing.Size(84, 36);
             this.btnHuy.TabIndex = 7;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
@@ -72,9 +71,10 @@
             // rdoCrystal
             // 
             this.rdoCrystal.AutoSize = true;
-            this.rdoCrystal.Location = new System.Drawing.Point(17, 71);
+            this.rdoCrystal.Location = new System.Drawing.Point(13, 80);
+            this.rdoCrystal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoCrystal.Name = "rdoCrystal";
-            this.rdoCrystal.Size = new System.Drawing.Size(202, 21);
+            this.rdoCrystal.Size = new System.Drawing.Size(152, 17);
             this.rdoCrystal.TabIndex = 6;
             this.rdoCrystal.Text = "Tất cả sách (Crystal report)";
             this.rdoCrystal.UseVisualStyleBackColor = true;
@@ -82,16 +82,18 @@
             // cbbDauSach
             // 
             this.cbbDauSach.FormattingEnabled = true;
-            this.cbbDauSach.Location = new System.Drawing.Point(247, 114);
+            this.cbbDauSach.Location = new System.Drawing.Point(185, 129);
+            this.cbbDauSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbbDauSach.Name = "cbbDauSach";
-            this.cbbDauSach.Size = new System.Drawing.Size(269, 24);
+            this.cbbDauSach.Size = new System.Drawing.Size(203, 21);
             this.cbbDauSach.TabIndex = 5;
             // 
             // btnXacNhan
             // 
-            this.btnXacNhan.Location = new System.Drawing.Point(103, 282);
+            this.btnXacNhan.Location = new System.Drawing.Point(280, 294);
+            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnXacNhan.Name = "btnXacNhan";
-            this.btnXacNhan.Size = new System.Drawing.Size(144, 44);
+            this.btnXacNhan.Size = new System.Drawing.Size(108, 36);
             this.btnXacNhan.TabIndex = 4;
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
@@ -100,9 +102,10 @@
             // rdoHoaDon
             // 
             this.rdoHoaDon.AutoSize = true;
-            this.rdoHoaDon.Location = new System.Drawing.Point(17, 204);
+            this.rdoHoaDon.Location = new System.Drawing.Point(13, 230);
+            this.rdoHoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoHoaDon.Name = "rdoHoaDon";
-            this.rdoHoaDon.Size = new System.Drawing.Size(162, 21);
+            this.rdoHoaDon.Size = new System.Drawing.Size(124, 17);
             this.rdoHoaDon.TabIndex = 3;
             this.rdoHoaDon.Text = "Hóa đơn (dữ liệu giả)";
             this.rdoHoaDon.UseVisualStyleBackColor = true;
@@ -110,9 +113,10 @@
             // rdoTheoNhom
             // 
             this.rdoTheoNhom.AutoSize = true;
-            this.rdoTheoNhom.Location = new System.Drawing.Point(17, 160);
+            this.rdoTheoNhom.Location = new System.Drawing.Point(13, 180);
+            this.rdoTheoNhom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoTheoNhom.Name = "rdoTheoNhom";
-            this.rdoTheoNhom.Size = new System.Drawing.Size(132, 21);
+            this.rdoTheoNhom.Size = new System.Drawing.Size(103, 17);
             this.rdoTheoNhom.TabIndex = 2;
             this.rdoTheoNhom.Text = "Sách theo nhóm";
             this.rdoTheoNhom.UseVisualStyleBackColor = true;
@@ -120,9 +124,10 @@
             // rdoTheoDauSach
             // 
             this.rdoTheoDauSach.AutoSize = true;
-            this.rdoTheoDauSach.Location = new System.Drawing.Point(17, 117);
+            this.rdoTheoDauSach.Location = new System.Drawing.Point(13, 130);
+            this.rdoTheoDauSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoTheoDauSach.Name = "rdoTheoDauSach";
-            this.rdoTheoDauSach.Size = new System.Drawing.Size(155, 21);
+            this.rdoTheoDauSach.Size = new System.Drawing.Size(122, 17);
             this.rdoTheoDauSach.TabIndex = 1;
             this.rdoTheoDauSach.Text = "Sách theo đầu sách";
             this.rdoTheoDauSach.UseVisualStyleBackColor = true;
@@ -130,21 +135,25 @@
             // rdoTatCaSach
             // 
             this.rdoTatCaSach.AutoSize = true;
-            this.rdoTatCaSach.Location = new System.Drawing.Point(17, 34);
+            this.rdoTatCaSach.Location = new System.Drawing.Point(13, 30);
+            this.rdoTatCaSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdoTatCaSach.Name = "rdoTatCaSach";
-            this.rdoTatCaSach.Size = new System.Drawing.Size(103, 21);
+            this.rdoTatCaSach.Size = new System.Drawing.Size(82, 17);
             this.rdoTatCaSach.TabIndex = 0;
             this.rdoTatCaSach.Text = "Tất cả sách";
             this.rdoTatCaSach.UseVisualStyleBackColor = true;
             // 
             // frmThongKeMuonSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 435);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmThongKeMuonSach";
-            this.Text = "frmThongKeMuonSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thống kê";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

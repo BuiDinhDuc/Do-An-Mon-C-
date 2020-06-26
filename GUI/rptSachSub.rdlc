@@ -77,27 +77,27 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>3.45956cm</Width>
+                  <Width>3.9314cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>2.97184cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.45956cm</Width>
+                  <Width>3.9314cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.45956cm</Width>
+                  <Width>3.9314cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>2.97184cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>2.97184cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>1.21383cm</Height>
+                  <Height>1.59748cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -291,7 +291,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>1.21383cm</Height>
+                  <Height>1.59748cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -498,21 +498,54 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>dsSach</DataSetName>
-            <Top>1.83417cm</Top>
-            <Left>3.45017cm</Left>
-            <Height>2.42766cm</Height>
-            <Width>17.87868cm</Width>
+            <Top>3.71271cm</Top>
+            <Left>1.14829cm</Left>
+            <Height>3.19495cm</Height>
+            <Width>20.70972cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Tablix>
+          <Textbox Name="Textbox1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Thống kê SÁCH</Value>
+                    <Style>
+                      <FontSize>30pt</FontSize>
+                      <Color>SeaGreen</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0.58153cm</Top>
+            <Left>7.12135cm</Left>
+            <Height>1.47313cm</Height>
+            <Width>7.73875cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>3.11667in</Height>
+        <Height>350pt</Height>
         <Style />
       </Body>
-      <Width>9.56385in</Width>
+      <Width>723pt</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>

@@ -9,18 +9,21 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>TẤT CẢ SÁCH</Value>
-                <Style />
+                <Value>Thống kê SÁCH</Value>
+                <Style>
+                  <FontSize>30pt</FontSize>
+                  <Color>SeaGreen</Color>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>1.29442cm</Top>
-        <Left>6.8145cm</Left>
-        <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
+        <Top>0.76525cm</Top>
+        <Left>13.00575cm</Left>
+        <Height>1.47313cm</Height>
+        <Width>7.73875cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -35,12 +38,12 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>15.15767cm</Width>
+              <Width>21.85163cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>1.47312cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -75,7 +78,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>1.47312cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -92,7 +95,6 @@
                         </Border>
                       </Style>
                     </Subreport>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -122,10 +124,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>dsDauSach</DataSetName>
-        <Top>2.58558cm</Top>
-        <Left>0.67616cm</Left>
-        <Height>1.2cm</Height>
-        <Width>15.15767cm</Width>
+        <Top>2.74433cm</Top>
+        <Left>5.38574cm</Left>
+        <Height>2.94625cm</Height>
+        <Width>21.85163cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -134,10 +136,10 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>2in</Height>
+    <Height>350pt</Height>
     <Style />
   </Body>
-  <Width>6.5in</Width>
+  <Width>900pt</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
