@@ -35,7 +35,7 @@
             // 
             this.rpvTatCaSach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rpvTatCaSach.Location = new System.Drawing.Point(0, 0);
-            this.rpvTatCaSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rpvTatCaSach.Margin = new System.Windows.Forms.Padding(2);
             this.rpvTatCaSach.Name = "rpvTatCaSach";
             this.rpvTatCaSach.ServerReport.BearerToken = null;
             this.rpvTatCaSach.Size = new System.Drawing.Size(1154, 561);
@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(1154, 561);
             this.Controls.Add(this.rpvTatCaSach);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmXemThongKe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Xem báo cáo";

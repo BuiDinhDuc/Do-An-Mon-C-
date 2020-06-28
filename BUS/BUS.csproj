@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="CTMuonSachBUS.cs" />
     <Compile Include="CTNhapSachBUS.cs" />
+    <Compile Include="CTTraSachBUS.cs" />
     <Compile Include="DauSachBUS.cs" />
     <Compile Include="DocGiaBUS.cs" />
     <Compile Include="MuonSachBUS.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="SachBUS.cs" />
     <Compile Include="TheLoaiBUS.cs" />
     <Compile Include="TheThuVienBUS.cs" />
+    <Compile Include="TraSachBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

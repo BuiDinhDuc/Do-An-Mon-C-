@@ -61,7 +61,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
         {
             List<SachDTO> lstSach = sachBUS.LayDSSach();
             this.rpvTatCaSach.LocalReport.ReportEmbeddedResource = "Quản_lý_thư_viện_Tri_Thức.rptHoaDon.rdlc";
-            this.rpvTatCaSach.LocalReport.SetParameters(new ReportParameter("paNguoiLap", "<Tên Người Lập>"));
+            this.rpvTatCaSach.LocalReport.SetParameters(new ReportParameter("paNguoiLap", "<Tên Người Lập>")); // ?
             this.rpvTatCaSach.LocalReport.SetParameters(new ReportParameter("paNgayLap", DateTime.Today.ToString()));
             this.rpvTatCaSach.LocalReport.DataSources.Add(new ReportDataSource("dsSach", lstSach));
             this.rpvTatCaSach.RefreshReport();

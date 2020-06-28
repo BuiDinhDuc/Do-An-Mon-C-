@@ -19,6 +19,12 @@ namespace BUS
             return sachDAL.LayDSSach();      
         }
 
+        public List<SachDTO> LayDSSachDuocMuon()
+        {
+
+            return sachDAL.LayDSSachDuocMuon();
+        }
+
         public bool DeleteBooks(string MaSach)
         {
            return sachDAL.DeleteBooks(MaSach);
@@ -80,6 +86,11 @@ namespace BUS
         public List<SachDTO> LaySachTheoDauSach(string MaDauSach)
         {
             return sachDAL.LaySachTheoDauSach(MaDauSach);
+        }
+
+        public bool UpdateSoLuong(List<SachMuonDTO> sachMuons)
+        {
+            return sachDAL.MuonSach(sachMuons);
         }
     }
 }

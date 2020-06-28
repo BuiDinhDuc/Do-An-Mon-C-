@@ -1,6 +1,6 @@
 ﻿namespace Quản_lý_thư_viện_Tri_Thức
 {
-    partial class frmMuonSach
+    partial class frmTraSach
     {
         /// <summary>
         /// Required designer variable.
@@ -63,6 +63,7 @@
             this.lsvSach.TabIndex = 26;
             this.lsvSach.UseCompatibleStateImageBehavior = false;
             this.lsvSach.View = System.Windows.Forms.View.Details;
+            this.lsvSach.SelectedIndexChanged += new System.EventHandler(this.lsvSach_SelectedIndexChanged);
             // 
             // MaSach1
             // 
@@ -217,7 +218,7 @@
             0,
             0});
             // 
-            // frmMuonSach
+            // frmTraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -239,7 +240,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmMuonSach";
+            this.Name = "frmTraSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Borrow Books";
             this.Load += new System.EventHandler(this.frmBorrowBooks_Load);

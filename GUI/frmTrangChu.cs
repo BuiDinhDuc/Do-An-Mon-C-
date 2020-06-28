@@ -33,7 +33,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
             time.Start();
             time_Tick(sender,e);
             this.Show();
-
+            this.KeyPreview = true;
         }
 
         #region Method
@@ -131,7 +131,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         private void toolMuonTra_Click(object sender, EventArgs e)
         {
-            frmMuonSach fMuonSach = new frmMuonSach();
+            frmTraSach fMuonSach = new frmTraSach();
            
                 foreach(Form frm in this.MdiChildren)
                 {
@@ -273,7 +273,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         private void mượnSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmMuonSach frmMuonSach = new frmMuonSach();
+            frmTraSach frmMuonSach = new frmTraSach();
             foreach (Form frm in this.MdiChildren)
             {
                 frm.Close();
@@ -301,22 +301,59 @@ namespace Quản_lý_thư_viện_Tri_Thức
         {
             frmThongKeMuonSach frmTKMS = new frmThongKeMuonSach();
             foreach (Form frm in this.MdiChildren)
-                {
-                 frm.Close();
-              }
-                frmTKMS.MdiParent = this;
+            {
+                frm.Close();
+            }
+            frmTKMS.MdiParent = this;
             frmTKMS.Show();
 
 
-            //frmXemBaoCao frmXem = new frmXemBaoCao();
-            //foreach (Form frm in this.MdiChildren)
-            //{
-            //    frm.Close();
-            //}
+        }
 
+        private void frmTrangChu_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.Control)
+            {
+                if(e.KeyCode.Equals(Keys.S))
+                {
+                    toolQuanLiSach_Click(null, null);
+                }
 
-            //frmXem.MdiParent = this;
-            //frmXem.Show();
+                
+            }
+        }
+
+        private void traCứuMượnSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmXemMuonSach frmXMS = new frmXemMuonSach();
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+            frmXMS.MdiParent = this;
+            frmXMS.Show();
+        }
+
+        private void trảSáchToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TraSach traSach = new TraSach();
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+            traSach.MdiParent = this;
+            traSach.Show();
+        }
+
+        private void traCứuTrảSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmXemTraSach traSach = new frmXemTraSach();
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+            traSach.MdiParent = this;
+            traSach.Show();
         }
     }
 }

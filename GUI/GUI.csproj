@@ -189,11 +189,23 @@
     <Compile Include="frmXemBaoCao.Designer.cs">
       <DependentUpon>frmXemBaoCao.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmXemMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemMuonSach.Designer.cs">
+      <DependentUpon>frmXemMuonSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmXemThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmXemThongKe.Designer.cs">
       <DependentUpon>frmXemThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXemTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemTraSach.Designer.cs">
+      <DependentUpon>frmXemTraSach.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -204,6 +216,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="TraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraSach.Designer.cs">
+      <DependentUpon>TraSach.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmLapHoaDon.resx">
       <DependentUpon>frmLapHoaDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,8 +273,14 @@
     <EmbeddedResource Include="frmXemBaoCao.resx">
       <DependentUpon>frmXemBaoCao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmXemMuonSach.resx">
+      <DependentUpon>frmXemMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmXemThongKe.resx">
       <DependentUpon>frmXemThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXemTraSach.resx">
+      <DependentUpon>frmXemTraSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -277,6 +301,9 @@
     <EmbeddedResource Include="rptSachSub.rdlc" />
     <EmbeddedResource Include="rptSachTheoLoai.rdlc" />
     <EmbeddedResource Include="rptTatCaSach.rdlc" />
+    <EmbeddedResource Include="TraSach.resx">
+      <DependentUpon>TraSach.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DataSetSach.xsc">
       <DependentUpon>DataSetSach.xsd</DependentUpon>
     </None>

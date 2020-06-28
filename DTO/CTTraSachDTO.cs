@@ -10,7 +10,7 @@ namespace DTO
     {
 
         public string MaTra { get; set; }
-        public string TenSach { get; set; }
+        public string MaSach { get; set; }
         public DateTime NgayTra { get; set; }
         public int SoLuong { get; set; }
       

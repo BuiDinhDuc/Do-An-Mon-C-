@@ -12,12 +12,12 @@ using BUS;
 
 namespace Quản_lý_thư_viện_Tri_Thức
 {
-    public partial class frmMuonSach : Form
+    public partial class frmTraSach : Form
     {
         SachBUS sachBUS = new SachBUS();
         public static List<MuonSachTamDTO> mst = new List<MuonSachTamDTO>();
 
-        public frmMuonSach()
+        public frmTraSach()
         {
             InitializeComponent();
         }
@@ -26,7 +26,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
         {
 
 
-            foreach (SachDTO s in sachBUS.LayDSSach())
+            foreach (SachDTO s in sachBUS.LayDSSachDuocMuon())
             {
                 ListViewItem item = new ListViewItem(s.MaSach);
 
@@ -48,15 +48,19 @@ namespace Quản_lý_thư_viện_Tri_Thức
                 {
                     ListViewItem x = new ListViewItem();
                     x.Text = item.Text;
+
+                    SachDTO s = sachBUS.timSach(item.Text);
+
                     x.SubItems.Add(item.SubItems[1].Text);
+                    nudSoLuong.Maximum = s.SoLuong;
                     x.SubItems.Add(nudSoLuong.Value.ToString());
 
                     if (KtraDaThem(x))
                     {
-                        lstSachMuon.Items.Add(x);             
+                        lstSachMuon.Items.Add(x);
                         lsvSach.Items.Remove(item);
                         nudSoLuong.Value = 1;
-                        
+
                     }
                     else return;
                 }
@@ -67,7 +71,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         private bool KtraDaThem(ListViewItem listViewItem)
         {
-            foreach(ListViewItem x in lstSachMuon.Items)
+            foreach (ListViewItem x in lstSachMuon.Items)
             {
                 if (x.Text == listViewItem.Text)
                     return false;
@@ -102,7 +106,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
                         lsvSach.Items.Add(x);
                         lstSachMuon.Items.Remove(item);
 
-                       
+
                     }
                     else return;
                 }
@@ -132,12 +136,12 @@ namespace Quản_lý_thư_viện_Tri_Thức
             else
                 frmBorrowBooks_Load(sender, e);
 
-         }
+        }
 
         private void btnLapHoaDon_Click(object sender, EventArgs e)
         {
-          
-           foreach(ListViewItem item in lstSachMuon.Items)
+
+            foreach (ListViewItem item in lstSachMuon.Items)
             {
                 MuonSachTamDTO muonSachTamDTO = new MuonSachTamDTO();
                 muonSachTamDTO.MaSach = item.Text;
@@ -146,9 +150,9 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
                 mst.Add(muonSachTamDTO);
             }
-            
 
-           
+
+
             frmLapHoaDon frmLapHoaDon = new frmLapHoaDon();
             frmLapHoaDon.ShowDialog();
         }
@@ -161,6 +165,18 @@ namespace Quản_lý_thư_viện_Tri_Thức
         private void btnHuy_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void lsvSach_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ListView.SelectedListViewItemCollection selected = lstSachMuon.SelectedItems;
+            foreach (ListViewItem item in selected)
+            {
+
+                SachDTO s = sachBUS.timSach(item.Text);
+                nudSoLuong.Maximum = s.SoLuong;
+                
+            }
         }
     }
 }

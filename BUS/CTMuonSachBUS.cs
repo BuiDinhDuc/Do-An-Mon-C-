@@ -15,5 +15,15 @@ namespace BUS
         {
             return ctmuonDAL.ThemCTMuonSach(lstCTMuon);
         }
+
+        public List<CTMuonSachDTO> LayDSCTMuonSach()
+        {
+            return ctmuonDAL.LayDSCTMuonSach();
+        }
+
+        public bool SuaCTMuonSach(string MaMuon,string MaSach)
+        {
+            return ctmuonDAL.SuaCTMuonSach(MaMuon, MaSach);
+        }
     }
 }

@@ -17,6 +17,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         CTMuonSachBUS ctMuonBUS = new CTMuonSachBUS();
         MuonSachBUS muonSachBUS = new MuonSachBUS();
+        SachBUS SachBUS = new SachBUS();
 
          List<int> So = new List<int>();
           
@@ -29,7 +30,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
         
         private void frmLapHoaDon_Load(object sender, EventArgs e)
         {
-            foreach(MuonSachTamDTO item in frmMuonSach.mst)
+            foreach(MuonSachTamDTO item in frmTraSach.mst)
             {
                 ListViewItem listViewItem = new ListViewItem(item.MaSach);
                 listViewItem.SubItems.Add(item.TenSach);
@@ -46,13 +47,15 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
-            frmMuonSach.mst.Clear();
+            frmTraSach.mst.Clear();
 
             this.Close();
         }
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+            List<SachMuonDTO> sachMuonDTOs = new List<SachMuonDTO>();
+
             MuonSachDTO muonSachDTO = new MuonSachDTO { 
                 MaMuon = txtMaMuon.Text,
                 SoThe = txtMaThe.Text,
@@ -74,14 +77,20 @@ namespace Quản_lý_thư_viện_Tri_Thức
                 ct.TrangThai = true;
                 ct.GiaSach = 0;
 
+                SachMuonDTO sachMuonDTO = new SachMuonDTO();
+                sachMuonDTO.MaSach = item.Text;
+                sachMuonDTO.SoSachMuon = ct.SoLuong;
+
                 listCTMuon.Add(ct);
+                sachMuonDTOs.Add(sachMuonDTO);
             }
             
             if(muonSachBUS.ThemMuonSach(muonSachDTO))
             {
-                if (ctMuonBUS.ThemCTMuonSach(listCTMuon))
+                if (ctMuonBUS.ThemCTMuonSach(listCTMuon) && SachBUS.UpdateSoLuong(sachMuonDTOs))
                 {
                     MessageBox.Show(Constrant.ThemThanhCong, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    frmTraSach.mst.Clear();
                     this.Close();
 
                 }

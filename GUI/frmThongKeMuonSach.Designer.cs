@@ -50,9 +50,9 @@
             this.groupBox1.Controls.Add(this.rdoTheoNhom);
             this.groupBox1.Controls.Add(this.rdoTheoDauSach);
             this.groupBox1.Controls.Add(this.rdoTatCaSach);
-            this.groupBox1.Location = new System.Drawing.Point(88, 28);
+            this.groupBox1.Location = new System.Drawing.Point(95, 74);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(607, 380);
+            this.groupBox1.Size = new System.Drawing.Size(701, 402);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Loại thống kê";
@@ -60,7 +60,7 @@
             // btnHuy
             // 
             this.btnHuy.Location = new System.Drawing.Point(467, 294);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(84, 36);
             this.btnHuy.TabIndex = 7;
@@ -72,7 +72,7 @@
             // 
             this.rdoCrystal.AutoSize = true;
             this.rdoCrystal.Location = new System.Drawing.Point(13, 80);
-            this.rdoCrystal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdoCrystal.Margin = new System.Windows.Forms.Padding(2);
             this.rdoCrystal.Name = "rdoCrystal";
             this.rdoCrystal.Size = new System.Drawing.Size(152, 17);
             this.rdoCrystal.TabIndex = 6;
@@ -83,7 +83,7 @@
             // 
             this.cbbDauSach.FormattingEnabled = true;
             this.cbbDauSach.Location = new System.Drawing.Point(185, 129);
-            this.cbbDauSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbbDauSach.Margin = new System.Windows.Forms.Padding(2);
             this.cbbDauSach.Name = "cbbDauSach";
             this.cbbDauSach.Size = new System.Drawing.Size(203, 21);
             this.cbbDauSach.TabIndex = 5;
@@ -91,7 +91,7 @@
             // btnXacNhan
             // 
             this.btnXacNhan.Location = new System.Drawing.Point(280, 294);
-            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(2);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(108, 36);
             this.btnXacNhan.TabIndex = 4;
@@ -103,18 +103,18 @@
             // 
             this.rdoHoaDon.AutoSize = true;
             this.rdoHoaDon.Location = new System.Drawing.Point(13, 230);
-            this.rdoHoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdoHoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.rdoHoaDon.Name = "rdoHoaDon";
-            this.rdoHoaDon.Size = new System.Drawing.Size(124, 17);
+            this.rdoHoaDon.Size = new System.Drawing.Size(93, 17);
             this.rdoHoaDon.TabIndex = 3;
-            this.rdoHoaDon.Text = "Hóa đơn (dữ liệu giả)";
+            this.rdoHoaDon.Text = "Sách đã nhập";
             this.rdoHoaDon.UseVisualStyleBackColor = true;
             // 
             // rdoTheoNhom
             // 
             this.rdoTheoNhom.AutoSize = true;
             this.rdoTheoNhom.Location = new System.Drawing.Point(13, 180);
-            this.rdoTheoNhom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdoTheoNhom.Margin = new System.Windows.Forms.Padding(2);
             this.rdoTheoNhom.Name = "rdoTheoNhom";
             this.rdoTheoNhom.Size = new System.Drawing.Size(103, 17);
             this.rdoTheoNhom.TabIndex = 2;
@@ -125,7 +125,7 @@
             // 
             this.rdoTheoDauSach.AutoSize = true;
             this.rdoTheoDauSach.Location = new System.Drawing.Point(13, 130);
-            this.rdoTheoDauSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdoTheoDauSach.Margin = new System.Windows.Forms.Padding(2);
             this.rdoTheoDauSach.Name = "rdoTheoDauSach";
             this.rdoTheoDauSach.Size = new System.Drawing.Size(122, 17);
             this.rdoTheoDauSach.TabIndex = 1;
@@ -136,7 +136,7 @@
             // 
             this.rdoTatCaSach.AutoSize = true;
             this.rdoTatCaSach.Location = new System.Drawing.Point(13, 30);
-            this.rdoTatCaSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdoTatCaSach.Margin = new System.Windows.Forms.Padding(2);
             this.rdoTatCaSach.Name = "rdoTatCaSach";
             this.rdoTatCaSach.Size = new System.Drawing.Size(82, 17);
             this.rdoTatCaSach.TabIndex = 0;
@@ -147,10 +147,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 435);
+            this.ClientSize = new System.Drawing.Size(905, 536);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmThongKeMuonSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thống kê";

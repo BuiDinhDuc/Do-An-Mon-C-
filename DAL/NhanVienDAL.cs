@@ -45,6 +45,22 @@ namespace DAL
             return nhanvienDTO;
         }
 
+        public NhanVienDTO timNhanVien1(string MaNV)
+        {
+            NhanVienDTO nhanvienDTO = new NhanVienDTO();
+            NhanVien nhanVien = new NhanVien();
+            nhanVien = data.NhanViens.SingleOrDefault(u => u.MaNV == MaNV );
+            nhanvienDTO.MaNV = nhanVien.MaNV;
+            nhanvienDTO.HoTenNV = nhanVien.HoTenNV;
+            nhanvienDTO.NgSinh = nhanVien.NgSinh.Value;
+            nhanvienDTO.SDT = nhanVien.SDT;
+            nhanvienDTO.TaiKhoan = nhanVien.TaiKhoan;
+            nhanvienDTO.MatKhau = nhanVien.MatKhau;
+            nhanvienDTO.Quyen = nhanVien.Quyen.Value;
+
+            return nhanvienDTO;
+        }
+
         public bool xoaNhanVien(string MaNV)
         {
             try

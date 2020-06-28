@@ -74,14 +74,14 @@
             // nhậpSáchToolStripMenuItem
             // 
             this.nhậpSáchToolStripMenuItem.Name = "nhậpSáchToolStripMenuItem";
-            this.nhậpSáchToolStripMenuItem.Size = new System.Drawing.Size(169, 24);
+            this.nhậpSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.nhậpSáchToolStripMenuItem.Text = "Nhập sách";
             this.nhậpSáchToolStripMenuItem.Click += new System.EventHandler(this.nhậpSáchToolStripMenuItem_Click);
             // 
             // thêmĐầuSáchToolStripMenuItem
             // 
             this.thêmĐầuSáchToolStripMenuItem.Name = "thêmĐầuSáchToolStripMenuItem";
-            this.thêmĐầuSáchToolStripMenuItem.Size = new System.Drawing.Size(169, 24);
+            this.thêmĐầuSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.thêmĐầuSáchToolStripMenuItem.Text = "Thêm đầu sách";
             this.thêmĐầuSáchToolStripMenuItem.Click += new System.EventHandler(this.thêmĐầuSáchToolStripMenuItem_Click);
             // 
@@ -100,7 +100,7 @@
             this.mượnSáchToolStripMenuItem,
             this.traCứuMượnSáchToolStripMenuItem});
             this.mToolStripMenuItem.Name = "mToolStripMenuItem";
-            this.mToolStripMenuItem.Size = new System.Drawing.Size(147, 24);
+            this.mToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.mToolStripMenuItem.Text = "Mượn sách";
             this.mToolStripMenuItem.Click += new System.EventHandler(this.mToolStripMenuItem_Click);
             // 
@@ -116,6 +116,7 @@
             this.traCứuMượnSáchToolStripMenuItem.Name = "traCứuMượnSáchToolStripMenuItem";
             this.traCứuMượnSáchToolStripMenuItem.Size = new System.Drawing.Size(195, 24);
             this.traCứuMượnSáchToolStripMenuItem.Text = "Tra cứu mượn sách";
+            this.traCứuMượnSáchToolStripMenuItem.Click += new System.EventHandler(this.traCứuMượnSáchToolStripMenuItem_Click);
             // 
             // trảSáchToolStripMenuItem
             // 
@@ -123,20 +124,22 @@
             this.trảSáchToolStripMenuItem1,
             this.traCứuTrảSáchToolStripMenuItem});
             this.trảSáchToolStripMenuItem.Name = "trảSáchToolStripMenuItem";
-            this.trảSáchToolStripMenuItem.Size = new System.Drawing.Size(147, 24);
+            this.trảSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.trảSáchToolStripMenuItem.Text = "Trả sách";
             // 
             // trảSáchToolStripMenuItem1
             // 
             this.trảSáchToolStripMenuItem1.Name = "trảSáchToolStripMenuItem1";
-            this.trảSáchToolStripMenuItem1.Size = new System.Drawing.Size(176, 24);
+            this.trảSáchToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
             this.trảSáchToolStripMenuItem1.Text = "Trả sách";
+            this.trảSáchToolStripMenuItem1.Click += new System.EventHandler(this.trảSáchToolStripMenuItem1_Click);
             // 
             // traCứuTrảSáchToolStripMenuItem
             // 
             this.traCứuTrảSáchToolStripMenuItem.Name = "traCứuTrảSáchToolStripMenuItem";
-            this.traCứuTrảSáchToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.traCứuTrảSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.traCứuTrảSáchToolStripMenuItem.Text = "Tra cứu trả sách";
+            this.traCứuTrảSáchToolStripMenuItem.Click += new System.EventHandler(this.traCứuTrảSáchToolStripMenuItem_Click);
             // 
             // toolQuanLiSach
             // 
@@ -144,8 +147,8 @@
             this.toolQuanLiSach.BackColor = System.Drawing.Color.Tan;
             this.toolQuanLiSach.Image = global::Quản_lý_thư_viện_Tri_Thức.Properties.Resources.Edit;
             this.toolQuanLiSach.Name = "toolQuanLiSach";
-            this.toolQuanLiSach.Size = new System.Drawing.Size(120, 54);
-            this.toolQuanLiSach.Text = "Quản lý sách";
+            this.toolQuanLiSach.Size = new System.Drawing.Size(122, 54);
+            this.toolQuanLiSach.Text = "Quản lý &sách";
             this.toolQuanLiSach.Click += new System.EventHandler(this.toolQuanLiSach_Click);
             // 
             // toolDocGia
@@ -310,6 +313,7 @@
             this.Name = "frmTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmHome_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.frmTrangChu_KeyUp);
             this.mnusMenu.ResumeLayout(false);
             this.mnusMenu.PerformLayout();
             this.sttStatus.ResumeLayout(false);

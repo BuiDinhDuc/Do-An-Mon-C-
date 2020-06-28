@@ -33,8 +33,32 @@ namespace DAL
             return result;
         }
 
+        public List<SachDTO> LayDSSachDuocMuon()
+        {
+            List<SachDTO> result = new List<SachDTO>();
+            result = data.Saches.Where(u => u.TrangThai.Value == true && u.SachHiem == false).Select(u => new SachDTO
+            {
+                MaSach = u.MaSach,
+                TenSach = u.TenSach,
+                MaDauSach = u.MaDauSach,
+                MaTheLoai = u.DauSach.MaTheLoai,
+                TenTacGia = u.TenTacGia,
+                TenNhaXuatBan = u.TenNhaXuatBan,
+                NamXuatBan = u.NamXuatBan.Value,
+                TrangThai = u.TrangThai.Value,
+                SoLuong = u.SoLuong.Value,
+                SachHiem = u.SachHiem.Value,
+                DonGia = (int)u.DonGia,
+
+            }).ToList();
+
+
+
+            return result;
+        }
+
         //------------------------------
-       public bool DeleteBooks(string MaSach)
+        public bool DeleteBooks(string MaSach)
         {
             try
             {
@@ -243,5 +267,23 @@ namespace DAL
 
             return lstSach;
         }
+
+        public bool MuonSach(List<SachMuonDTO> sachmuon)
+        {
+              foreach (SachMuonDTO sm in sachmuon)
+                {
+                    Sach s = data.Saches.SingleOrDefault(u => u.MaSach == sm.MaSach && u.TrangThai.Value == true);
+                    s.SoLuong -= sm.SoSachMuon;
+
+                }
+
+                data.SaveChanges();
+
+                return true;
+           
+        }
+
+
+       
     }
 }

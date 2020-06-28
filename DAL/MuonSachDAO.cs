@@ -29,6 +29,9 @@ namespace DAL
 
                 data.MuonSaches.Add(muonSach);
 
+
+
+
                 data.SaveChanges();
 
                 return true;
@@ -36,6 +39,44 @@ namespace DAL
             {
                 return false;
             }
+        }
+
+        public List<MuonSachDTO> LayDSMuonSach()
+        {
+            List<MuonSachDTO> result = new List<MuonSachDTO>();
+
+            result = data.MuonSaches.Where(u => u.TrangThai == true).Select(u => new MuonSachDTO
+            {
+
+                MaMuon = u.MaMuon,
+                SoThe = u.SoThe,
+                MaNV = u.MaNV,
+                NgayMuon = u.NgayMuon.Value,
+                NgayPhaiTra = u.NgayPhaiTra.Value,
+                TrangThai = u.TrangThai.Value
+            }
+            ).ToList();
+
+            return result;
+        }
+
+        public List <MuonSachDTO> timMuonSach(string MaMuon)
+        {
+            List<MuonSachDTO> result = new List<MuonSachDTO>();
+
+            result = data.MuonSaches.Where(u => u.TrangThai == true && u.MaMuon.Contains(MaMuon)).Select(u => new MuonSachDTO
+            {
+
+                MaMuon = u.MaMuon,
+                SoThe = u.SoThe,
+                MaNV = u.MaNV,
+                NgayMuon = u.NgayMuon.Value,
+                NgayPhaiTra = u.NgayPhaiTra.Value,
+                TrangThai = u.TrangThai.Value
+            }
+            ).ToList();
+
+            return result;
         }
       
     }

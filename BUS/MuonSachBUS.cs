@@ -34,5 +34,15 @@ namespace BUS
         {
             return muonSachDAO.ThemMuonSach(muonSachDTO);
         }
+
+        public List<MuonSachDTO> LayDSMuonSach()
+        {
+            return muonSachDAO.LayDSMuonSach();
+        }
+
+        public List<MuonSachDTO> TimMuonSach(string MaMuon)
+        {
+            return muonSachDAO.timMuonSach(MaMuon);
+        }
     }
 }

@@ -64,6 +64,7 @@
     <Compile Include="CTTraSach.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
+    <Compile Include="CTTraSachDAL.cs" />
     <Compile Include="DauSach.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
@@ -118,6 +119,7 @@
     <Compile Include="TraSach.cs">
       <DependentUpon>QuanLyThuVien.tt</DependentUpon>
     </Compile>
+    <Compile Include="TraSachDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

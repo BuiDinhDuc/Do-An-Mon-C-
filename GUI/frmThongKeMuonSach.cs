@@ -21,6 +21,7 @@ namespace Quản_lý_thư_viện_Tri_Thức
             cbbDauSach.DataSource = dauSachBUS.LayDSDauSach();
             cbbDauSach.DisplayMember = "TenDauSach";
             cbbDauSach.ValueMember = "MaDauSach";
+            rdoTatCaSach.Checked = true;
         }
 
         private void btnXacNhan_Click(object sender, EventArgs e)

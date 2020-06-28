@@ -39,7 +39,7 @@
             this.cRVSach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cRVSach.Location = new System.Drawing.Point(0, 0);
             this.cRVSach.Name = "cRVSach";
-            this.cRVSach.Size = new System.Drawing.Size(987, 513);
+            this.cRVSach.Size = new System.Drawing.Size(1154, 561);
             this.cRVSach.TabIndex = 0;
             this.cRVSach.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
@@ -47,7 +47,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(987, 513);
+            this.ClientSize = new System.Drawing.Size(1154, 561);
             this.Controls.Add(this.cRVSach);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmXemBaoCao";

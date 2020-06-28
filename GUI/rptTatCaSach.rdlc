@@ -10,7 +10,9 @@
             <TextRuns>
               <TextRun>
                 <Value>TẤT CẢ SÁCH</Value>
-                <Style />
+                <Style>
+                  <FontSize>40pt</FontSize>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -19,8 +21,8 @@
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>0.69117cm</Top>
         <Left>8.84767cm</Left>
-        <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
+        <Height>1.49958cm</Height>
+        <Width>9.61729cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -35,22 +37,22 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>3.45956cm</Width>
+              <Width>4.37678cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.41722cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.45956cm</Width>
+              <Width>4.37678cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.45956cm</Width>
+              <Width>4.37678cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.41722cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.41722cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -456,10 +458,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>dsSach</DataSetName>
-        <Top>1.96117cm</Top>
+        <Top>3.25763cm</Top>
         <Left>1.27cm</Left>
         <Height>2.42766cm</Height>
-        <Width>17.87868cm</Width>
+        <Width>23.38201cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -468,10 +470,10 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>3.49167in</Height>
+    <Height>3.74167in</Height>
     <Style />
   </Body>
-  <Width>7.92218in</Width>
+  <Width>10.15135in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
