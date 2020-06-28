@@ -33,6 +33,7 @@
             this.MaSach = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_MuonSach)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,13 +97,27 @@
             this.NgayTra.Name = "NgayTra";
             this.NgayTra.ReadOnly = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(438, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(401, 63);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Chi tiết trả sách";
+            // 
             // frmXemTraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1170, 600);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgv_MuonSach);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.PeachPuff;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmXemTraSach";
@@ -111,6 +126,7 @@
             this.Load += new System.EventHandler(this.frmXemTraSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_MuonSach)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -121,5 +137,6 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn MaSach;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayTra;
+        private System.Windows.Forms.Label label1;
     }
 }

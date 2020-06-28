@@ -42,6 +42,7 @@
             this.MaMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaSach = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
             this.grpThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_MuonSach)).BeginInit();
             this.SuspendLayout();
@@ -204,11 +205,23 @@
             this.SoLuong.Name = "SoLuong";
             this.SoLuong.ReadOnly = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label2.Location = new System.Drawing.Point(445, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(236, 63);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Trả sách";
+            // 
             // TraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1170, 600);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.grpThongTin);
             this.Controls.Add(this.dtgv_MuonSach);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -222,6 +235,7 @@
             this.grpThongTin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_MuonSach)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -241,5 +255,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaMuon;
         private System.Windows.Forms.DataGridViewComboBoxColumn MaSach;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.Label label2;
     }
 }
