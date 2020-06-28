@@ -52,8 +52,7 @@ namespace DAL
 
         public bool themDocGia(DocGiaDTO docGiaDTO)
         {
-            try
-            {
+           
                 DocGia docGia = new DocGia {
 
                     MaDocGia = docGiaDTO.MaDocGia,
@@ -69,11 +68,7 @@ namespace DAL
                 data.SaveChanges();
 
                 return true;
-            }
-            catch(Exception)
-            {
-                return false;
-            }
+          
         }
 
         public bool xoaDocGia(string MaDG)

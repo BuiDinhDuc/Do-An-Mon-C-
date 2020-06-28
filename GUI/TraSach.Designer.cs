@@ -59,14 +59,14 @@
             this.grpThongTin.Controls.Add(this.lblTenSach);
             this.grpThongTin.Location = new System.Drawing.Point(775, 158);
             this.grpThongTin.Name = "grpThongTin";
-            this.grpThongTin.Size = new System.Drawing.Size(356, 230);
+            this.grpThongTin.Size = new System.Drawing.Size(356, 253);
             this.grpThongTin.TabIndex = 16;
             this.grpThongTin.TabStop = false;
             this.grpThongTin.Text = "Thông tin chi tiết";
             // 
             // btnTraSach
             // 
-            this.btnTraSach.Location = new System.Drawing.Point(145, 178);
+            this.btnTraSach.Location = new System.Drawing.Point(145, 209);
             this.btnTraSach.Name = "btnTraSach";
             this.btnTraSach.Size = new System.Drawing.Size(75, 23);
             this.btnTraSach.TabIndex = 20;

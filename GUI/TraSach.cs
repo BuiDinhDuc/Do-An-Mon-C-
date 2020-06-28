@@ -68,13 +68,13 @@ namespace Quản_lý_thư_viện_Tri_Thức
             
             };
 
-            if (traSachBUS.ThemTraSach(traSachDTO) && ctTraSachBUS.ThemCTTraSach(ctTraSachDTO) && cTMuonSachBUS.SuaCTMuonSach(txtMaMuon.Text, ctTraSachDTO.MaSach))
+            if (traSachBUS.ThemTraSach(traSachDTO) && ctTraSachBUS.ThemCTTraSach(ctTraSachDTO) && cTMuonSachBUS.SuaCTMuonSach(txtMaMuon.Text, ctTraSachDTO.MaSach) && sachBUS.NhapThemSachCu(ctTraSachDTO.MaSach,ctTraSachDTO.SoLuong))
             {
-                MessageBox.Show("Tra thanh cong");
+                MessageBox.Show(Constrant.TraSachThanhCong,Constrant.ThongBao,MessageBoxButtons.OK,MessageBoxIcon.Information);
                 TraSach_Load(sender, e);
             }
             else
-                MessageBox.Show("Tra that bai");
+                MessageBox.Show(Constrant.TraSachThatBai, Constrant.ThongBao, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

@@ -28,12 +28,14 @@ namespace Quản_lý_thư_viện_Tri_Thức
 
         public static string MatKhauTrungNhau = "Mật khẩu và mật khẩu xác nhận không trùng nhau";
 
-        public static string SaiMatKhau = "Sai mat khau";
+        public static string SaiMatKhau = "Sai mật khẩu";
 
-        public static string DoiMKThanhCong = "Doi mat khau thanh cong";
+        public static string DoiMKThanhCong = "Đổi mật khẩu thành công";
 
-        public static string DoiMKThatBai = "Doi mat khau that bai";
+        public static string DoiMKThatBai = "Đổi mật khẩu thất bại";
 
+        public static string TraSachThanhCong = "Trả sách thành công";
 
+        public static string TraSachThatBai = "Trả sách thất bại";
     }
 }

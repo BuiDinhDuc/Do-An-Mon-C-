@@ -31,5 +31,10 @@ namespace Quản_lý_thư_viện_Tri_Thức
             col.DisplayMember = "TenSach";
             col.ValueMember = "MaSach";
         }
+
+        private void dtgv_MuonSach_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

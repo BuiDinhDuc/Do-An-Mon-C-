@@ -32,26 +32,30 @@
             this.MaTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaSach = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_MuonSach)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgv_MuonSach
             // 
+            this.dtgv_MuonSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_MuonSach.BackgroundColor = System.Drawing.Color.Silver;
             this.dtgv_MuonSach.ColumnHeadersHeight = 25;
             this.dtgv_MuonSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaTra,
             this.MaSach,
-            this.SoLuong});
+            this.SoLuong,
+            this.NgayTra});
             this.dtgv_MuonSach.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dtgv_MuonSach.Location = new System.Drawing.Point(-1, 158);
+            this.dtgv_MuonSach.Location = new System.Drawing.Point(110, 167);
             this.dtgv_MuonSach.Margin = new System.Windows.Forms.Padding(4);
             this.dtgv_MuonSach.Name = "dtgv_MuonSach";
             this.dtgv_MuonSach.ReadOnly = true;
             this.dtgv_MuonSach.RowHeadersWidth = 51;
             this.dtgv_MuonSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgv_MuonSach.Size = new System.Drawing.Size(753, 400);
+            this.dtgv_MuonSach.Size = new System.Drawing.Size(913, 400);
             this.dtgv_MuonSach.TabIndex = 16;
+            this.dtgv_MuonSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_MuonSach_CellContentClick);
             // 
             // MaTra
             // 
@@ -85,6 +89,13 @@
             this.SoLuong.Name = "SoLuong";
             this.SoLuong.ReadOnly = true;
             // 
+            // NgayTra
+            // 
+            this.NgayTra.DataPropertyName = "NgayTra";
+            this.NgayTra.HeaderText = "Ngày trả";
+            this.NgayTra.Name = "NgayTra";
+            this.NgayTra.ReadOnly = true;
+            // 
             // frmXemTraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -109,5 +120,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaTra;
         private System.Windows.Forms.DataGridViewComboBoxColumn MaSach;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayTra;
     }
 }

@@ -23,8 +23,7 @@ namespace DAL
 
         public bool themTheTV(TheThuVienDTO theThuVienDTO)
         {
-            try
-            {
+           
                 TheThuVien theThuVien = new TheThuVien
                 {
                     SoThe = theThuVienDTO.SoThe,
@@ -37,10 +36,7 @@ namespace DAL
                 data.SaveChanges();
 
                 return true;
-            } catch(Exception)
-            {
-                return false;
-            }
+           
 
         }
 
